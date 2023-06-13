@@ -1,13 +1,8 @@
 #############q1
-# Load the iris dataset
 data(iris)
-
-# Side-by-side boxplots of continuous variables by Species
 par(mfrow = c(1, 2))
 boxplot(Sepal.Length ~ Species, data = iris, main = "Sepal Length by Species")
 boxplot(Petal.Length ~ Species, data = iris, main = "Petal Length by Species")
-
-# Scatterplot of Sepal.Length against Petal.Length, colored by Species
 plot(Petal.Length ~ Sepal.Length, data = iris, col = iris$Species, pch = 16,
      main = "Scatterplot of Sepal Length vs Petal Length",
      xlab = "Sepal Length", ylab = "Petal Length")
